@@ -1,119 +1,83 @@
-/* Arquivo responsável por deixar a section Sobre responsiva */
+/* proporção do notebook */
+@media (max-width: 1025) {
+    main {
+        #sobre .container {
+            padding: 30px;
 
-
-/* Notebook */
-@media (max-width: 1025px) {
-
-    #sobre {
-
-        .container {
-
-            .textoSobre {
-                width: 50%;
-
-                h3 {
-                    font-size: 26px;
-                }
+            .container .textoSobre a {
+                width: 40%;
             }
 
-            figure {
-                width: 45%;
 
-                img {
+
+        }
+
+        #blog {
+            .container {
+                max-width: 580px;
+                height: 42%;
+
+                a {
+                    width: 35%;
+                }
+            }
+        }
+
+        #explore .container .cardExplore {
+
+            width: 280px;
+
+        }
+    }
+}
+
+@media (max-width: 769px) {
+
+    main {
+
+        #sobre {
+
+            height: 800px;
+
+
+            .container {
+                flex-direction: column-reverse;
+
+                .textoSobre {
+                    height: 50%;
                     width: 100%;
-                    height: auto;
+                    align-items: center;
+                }
+
+                .figure {
+                    height: 50%;
+                    width: 100%;
+                }
+            }
+        }
+
+        #explore {
+            height: 150dvh;
+
+            .container {
+                flex-direction: column;
+
+                .cardExplore {
+                    margin: 15px;
+                    padding: 10px;
                 }
             }
         }
     }
 }
 
+@media(max-width:480px) {
+    main {
+        #sobre {
+            height: 110dvh;
 
-/* Tablet */
-@media (max-width: 768px) {
-
-    #sobre {
-
-        height: auto;
-
-        .container {
-            flex-direction: column;
-            gap: 30px;
-
-            .textoSobre {
-                width: 90%;
-                height: auto;
-                align-items: center;
-                text-align: center;
-
-                h3 {
-                    font-size: 25px;
-                }
-
-                p {
-                    line-height: 1.6;
-                }
-
-                a {
-                    width: 40%;
-                    height: 50px;
-                }
-            }
-
-            figure {
-                width: 90%;
-                height: auto;
-
-                img {
-                    width: 100%;
-                    height: auto;
-                }
-            }
-        }
-    }
-}
-
-
-/* Celular */
-@media (max-width: 480px) {
-
-    #sobre {
-
-        padding: 40px 15px;
-
-        .container {
-            padding: 30px 10px;
-            gap: 20px;
-
-            .textoSobre {
-                width: 100%;
-
-                h3 {
-                    font-size: 22px;
-                }
-
-                p {
-                    font-size: 14px;
-                    line-height: 1.5;
-                }
-
-                a {
-                    width: 60%;
-                    height: 45px;
-                }
-            }
-
-            figure {
-                width: 100%;
-
-                img {
-                    width: 100%;
-                    height: auto;
-                }
-
-                figcaption {
-                    font-size: 13px;
-                }
+            .container {
+                padding
             }
         }
     }
